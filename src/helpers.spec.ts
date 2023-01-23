@@ -20,18 +20,18 @@ test('When `toSuccess` is called with an object T, Then it returns an object of 
   });
 });
 
-test('When isSupportedLanguage is called with english language as parameter, Then it returns true', async (t) => {
+test('When `isSupportedLanguage` is called with english language as parameter, Then it returns true', async (t) => {
   t.true(isSupportedLanguage(SUPPORTED_LANGUAGES.ENGLISH));
 });
 
-test('When isSupportedLanguage is called  with german language as parameter, Then it returns true', async (t) => {
+test('When `isSupportedLanguage` is called  with german language as parameter, Then it returns true', async (t) => {
   t.true(isSupportedLanguage(SUPPORTED_LANGUAGES.GERMAN));
 });
 
-test('When isSupportedLanguage is called with chinese language as parameter, Then it returns true', async (t) => {
+test('When `isSupportedLanguage` is called with chinese language as parameter, Then it returns true', async (t) => {
   t.true(isSupportedLanguage(SUPPORTED_LANGUAGES.CHINESE));
 });
 
-test('When isSupportedLanguage is called with an unsupported language, Then it returns false', async (t) => {
+test('When `isSupportedLanguage` is called with an unsupported language, Then it returns false', async (t) => {
   t.false(isSupportedLanguage('fr' as SUPPORTED_LANGUAGES));
 });
