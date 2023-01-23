@@ -1,7 +1,6 @@
-
 export type VictorBetStatus = {
   success: boolean;
-  errorCode: number,
+  errorCode: number;
   extraInfo: Record<string, any>;
 };
 
