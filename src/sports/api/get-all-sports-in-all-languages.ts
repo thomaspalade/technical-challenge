@@ -13,7 +13,7 @@ export const getAllSportsInAllLanguanges: RequestHandler = async (
     !isSupportedLanguage(req.params.languageCode as SUPPORTED_LANGUAGES)
   ) {
     res.status(400).send({
-      message: 'Language not supported yet',
+      message: ERROR_MESSAGES.LANGUAGE_NOT_SUPPORTED,
     });
     return;
   }
@@ -36,7 +36,7 @@ export const getAllSportsInAllLanguanges: RequestHandler = async (
   const maybeSortedSports = cachedData.get(lang + '_sortedSports');
   if (!maybeSortedSports) {
     res.status(404).send({
-      message: 'Sports not found for the current language',
+      message: ERROR_MESSAGES.SPORTS_NOT_FOUND,
     });
     return;
   }
