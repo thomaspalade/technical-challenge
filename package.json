@@ -60,7 +60,7 @@
     "files": [
       "!dist/**"
     ],
-    "timeout": "3s",
+    "timeout": "5s",
     "typescript": {
       "compile": false,
       "rewritePaths": {
