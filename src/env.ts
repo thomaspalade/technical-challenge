@@ -1,5 +1,5 @@
 import NodeCache from 'node-cache';
-import { EnvConfig } from './generic-types';
+import { EnvConfig } from './types/generic-types';
 
 export const ENV_CONFIG: EnvConfig = {
   cacheInstance: new NodeCache(),

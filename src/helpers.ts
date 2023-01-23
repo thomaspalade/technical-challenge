@@ -1,5 +1,5 @@
 import { SUPPORTED_LANGUAGES } from './enums';
-import { Failure, Success } from './generic-types';
+import { Failure, Success } from './types/generic-types';
 
 export const toFailure = (status: number, message: string): Failure<Error> => ({
   ok: false,

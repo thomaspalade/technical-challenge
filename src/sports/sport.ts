@@ -1,4 +1,4 @@
-import { Sport } from '../victor-bet-types';
+import { Sport } from '../types/victor-bet-types';
 
 const _compFunc = (firstSport: Sport, secondSport: Sport) =>
   firstSport.pos - secondSport.pos;

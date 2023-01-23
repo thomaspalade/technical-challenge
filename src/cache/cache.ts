@@ -1,9 +1,9 @@
 import NodeCache from 'node-cache';
 import { ERROR_MESSAGES, SUPPORTED_LANGUAGES } from '../enums';
 import axios from 'axios';
-import { Either } from '../generic-types';
+import { Either } from '../types/generic-types';
 import { toFailure, toSuccess } from '../helpers';
-import { GameEvent, VictorBetResult } from '../victor-bet-types';
+import { GameEvent, VictorBetResult } from '../types/victor-bet-types';
 import { DEFAULT_LANGUAGE } from '../const';
 import { sortSportsByPos } from '../sports/sport';
 
