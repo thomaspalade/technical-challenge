@@ -14,6 +14,9 @@ app.use(express.json());
 // Endpoints
 import setupEventsRoutes from './events/routes';
 setupEventsRoutes(app);
+import setupSportsRoutes from './sports/routes';
+setupSportsRoutes(app);
+
 import util from 'util';
 
 process.on('SIGTERM', () => {
