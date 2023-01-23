@@ -1,0 +1,3 @@
+import { SUPPORTED_LANGUAGES } from "./enums";
+
+export const DEFAULT_LANGUAGE = SUPPORTED_LANGUAGES.ENGLISH;
