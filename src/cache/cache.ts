@@ -108,3 +108,22 @@ export const populateCacheWithSportsAndEvents = (
   cache.set(lang + '_sortedSports', sortedSports);
   cache.set('allEvents', allEvents);
 };
+
+export const getCacheData = async (
+  cache: NodeCache,
+  victorBetBaseURL: string,
+  victorBetSuffixURL: string,
+  lang = DEFAULT_LANGUAGE
+): Promise<Either<Error, NodeCache>> => {
+  if (!cacheContainsDataForLanguage(cache, lang)) {
+    const url = `${victorBetBaseURL}${lang}${victorBetSuffixURL}`;
+    const maybeVictorBetResult = await getVictorBetResult(url);
+    if (!maybeVictorBetResult.ok) {
+      return maybeVictorBetResult;
+    }
+
+    populateCacheWithSportsAndEvents(cache, maybeVictorBetResult.value, lang);
+  }
+
+  return toSuccess(200, cache);
+};
