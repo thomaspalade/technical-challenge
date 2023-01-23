@@ -1,3 +1,5 @@
 import { SUPPORTED_LANGUAGES } from './enums';
 
 export const DEFAULT_LANGUAGE = SUPPORTED_LANGUAGES.ENGLISH;
+export const SERVER_TIMEOUT = 5000;
+export const KEEP_ALIVE_TIMEOUT = 61_000;
