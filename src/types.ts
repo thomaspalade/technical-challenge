@@ -11,3 +11,5 @@ export type Success<T> = {
 };
 
 export type Either<E, A> = Failure<E> | Success<A>;
+
+
