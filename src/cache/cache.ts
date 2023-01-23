@@ -106,7 +106,7 @@ export const populateCacheWithSportsAndEvents = (
 
   const sortedSports = sortSportsByPos(sports);
   cache.set(lang + '_sortedSports', sortedSports);
-  cache.set('allEvents', allEvents);
+  cache.set(lang + '_allEvents', allEvents);
 };
 
 export const getCacheData = async (

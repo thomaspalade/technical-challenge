@@ -2,6 +2,7 @@ import { Request, RequestHandler, Response } from 'express';
 import { getCacheData } from '../../cache/cache';
 import { ENV_CONFIG } from '../../env';
 import { ERROR_MESSAGES } from '../../enums';
+import { DEFAULT_LANGUAGE } from '../../const';
 
 export const getEvents: RequestHandler = async (
   req: Request,
@@ -28,7 +29,7 @@ export const getEvents: RequestHandler = async (
   }
 
   res.status(200).send({
-    allEvents: cachedData.get('allEvents'),
+    allEvents: cachedData.get(DEFAULT_LANGUAGE + '_allEvents'),
   });
   return;
 };
