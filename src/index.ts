@@ -12,6 +12,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Endpoints
+import setupEventsRoutes from './events/routes';
+setupEventsRoutes(app);
 import util from 'util';
 
 process.on('SIGTERM', () => {
