@@ -18,8 +18,8 @@ technical challenge for interview process
 
 I used a local .dotenv file for providing the env variables used in the implementation
 the structure of the file is the following:
-`PORT=3000`
-`VICTOR_BET_BASE_URL="https://partners.betvictor.mobi/"`
-`VICTOR_BET_URL_SUFFIX="/in-play/1/events"`
+- `PORT=3000`
+- `VICTOR_BET_BASE_URL="https://partners.betvictor.mobi/"`
+- `VICTOR_BET_URL_SUFFIX="/in-play/1/events"`
 
 The reason for having 2 env variables separating the source of events URL is so we can easily insert the language in between them and build dinamically the VICTOR BET URL for each http request.
