@@ -1,5 +1,17 @@
-# technical-challenge
+# Technical Challenge
 technical challenge for interview process
+
+# Solution tools and tech stack
+- Typescript (typing) (https://www.npmjs.com/package/typescript) 
+- Express (routing) (https://www.npmjs.com/package/express)
+- Node.js (https://www.npmjs.com/package/node)
+- Axios (hhtp client) (https://www.npmjs.com/package/axios)
+- Node Cache (https://www.npmjs.com/package/node-cache)
+- Instanbul/nyc (running scripts) (https://www.npmjs.com/package/nyc)
+- ava (testing) (https://www.npmjs.com/package/ava)
+- nock (testing) (https://www.npmjs.com/package/nock)
+- supertest (testing) (https://www.npmjs.com/package/supertest)
+
 
 ### REST API - endpoints
 - GET `v1/sports` - returns the sorted sports 
