@@ -16,8 +16,7 @@ technical challenge for interview process
 
 ### Env Config
 
-I used a local .dotenv file for providing the env variables used in the implementation
-the structure of the file is the following:
+I used a local .dotenv file for providing the env variables used in the implementation. The structure of the file is the following:
 - `PORT=3000`
 - `VICTOR_BET_BASE_URL="https://partners.betvictor.mobi/"`
 - `VICTOR_BET_URL_SUFFIX="/in-play/1/events"`
